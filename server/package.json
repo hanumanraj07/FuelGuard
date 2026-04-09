@@ -1,0 +1,22 @@
+{
+  "name": "fuelguard-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "cloudinary": "^2.6.1",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.4",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "multer": "^1.4.5-lts.1",
+    "pdfkit": "^0.17.1",
+    "razorpay": "^2.9.4"
+  }
+}

@@ -1,0 +1,17 @@
+node_modules
+dist
+dist-ssr
+*.tsbuildinfo
+*.local
+.DS_Store
+server/uploads
+.server/tmp
+server/tmp
+.env
+.env.*
+!.env.example
+!server/.env.example
+!ai-service/.env.example
+__pycache__/
+.venv/
+nul
