@@ -223,7 +223,7 @@ const invoiceUpload = multer({
 })
 
 const app = express()
-app.use(cors({ origin: getCorsOrigins(), credentials: false }))
+app.use(cors({ origin:"https://fuel-guard-dev.vercel.app", credentials: true }))
 app.use(express.json({ limit: '2mb' }))
 
 app.get('/api/health', (req, res) => {
