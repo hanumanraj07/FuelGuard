@@ -6,7 +6,7 @@ from statistics import median
 from typing import List, Optional
 
 import cv2
-import easyocr
+# import easyocr
 import numpy as np
 import requests
 from fastapi import FastAPI, HTTPException
@@ -14,7 +14,8 @@ from pydantic import BaseModel, Field
 
 app = FastAPI(title="FuelGuard AI Service")
 
-READER = easyocr.Reader(["en"], gpu=False)
+# READER = easyocr.Reader(["en"], gpu=False)
+READER = None
 JUMP_THRESHOLD_L = float(os.getenv("JUMP_THRESHOLD_L", "5.0"))
 MAX_FLOW_LPS = float(os.getenv("MAX_FLOW_LPS", "0.83"))
 MIN_CONFIDENCE = float(os.getenv("MIN_CONFIDENCE", "0.4"))
